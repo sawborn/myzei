@@ -35,6 +35,80 @@
         </div>
     </header>
 
+ <div class="exhibitions">
+  <h1 class="title">Ближайшие выставки</h1>
+  <div class="exhibitions-cards">
+    <div class="exhibition-card">
+      <img
+        class="exhibition-card-img"
+        src="https://static.sobaka.ru/images/image/01/44/77/58/_normal.jpg?v=1624961922"
+        alt="Иван Шишкин"
+      />
+      <h2>Выставка Ивана Шишкина</h2>
+      <button class="dropbtn" onclick="openModal(`Представляем выставку картин известного русского художника Ивана
+      Шишкина — мастера пейзажной живописи XIX века. Его работы отличаются невероятной реалистичностью и вниманием к деталям,
+      позволяя зрителю почувствовать атмосферу русской природы. На выставке представлены знаменитые полотна, такие как
+      «Утро в сосновом лесу» и «Рожь».`)">
+        Подробнее
+      </button>
+    </div>
+
+    <div class="exhibition-card">
+      <img class="exhibition-card-img" src="images.jpeg" alt="Кандинский" />
+      <h2>Выставка Василия Кандинского</h2>
+      <button class="dropbtn" onclick="openModal(`Представляем выставку работ Василия Кандинского — одного из основоположников
+      абстрактного искусства. Его яркие и динамичные полотна раскрывают мир эмоций и музыкальных ритмов через цвет и форму.
+      На выставке можно увидеть культовые произведения, в которых сочетаются экспрессия и философская глубина.`)">
+        Подробнее
+      </button>
+    </div>
+
+    <div class="exhibition-card">
+      <img class="exhibition-card-img" src="maria.jpg" alt="Мария Башкирцева" />
+      <h2>Выставка Марии Башкирцевой</h2>
+      <button class="dropbtn" onclick="openModal(`Выставка Марии Башкирцевой представляет глубокий и трогательный взгляд
+      на жизнь и судьбы женщин XIX века. Её картины отличаются утонченностью и искренностью, сочетая реализм с поэтичностью.`)">
+        Подробнее
+      </button>
+    </div>
+
+        <div class="exhibition-card">
+      <img class="exhibition-card-img" src="vostok.png" alt="Восток" />
+      <h2>Русские художники в Центральной Азии</h2>
+      <button class="dropbtn" onclick="openModal(`Выставка русских художников на Востоке раскрывает богатство культурных диалогов и поисков вдохновения в далеких странах.
+       В их полотнах соединяются величие традиций русской живописи и очарование восточной экзотики — яркие краски, таинственные пейзажи и тонкие образы людей.`)">
+        Подробнее
+      </button>
+    </div>
+
+        <div class="exhibition-card">
+      <img class="exhibition-card-img" src="icasso.jpg" alt="Пикассо" />
+      <h2>Выставка картин <br>Пабло Пикассо</h2>
+      <button class="dropbtn" onclick="openModal(`Выставка Пабло Пикассо открывает мир гениального мастера, сумевшего переосмыслить искусство XX века. Его полотна поражают смелостью формы и цвета, свободой взгляда и глубиной эмоций.
+       В каждом произведении — поиск нового языка, отражающего противоречия и красоту человеческой природы.`)">
+        Подробнее
+      </button>
+    </div>
+
+    <div class="exhibition-card">
+      <img class="exhibition-card-img" src="oleg.jpg" alt="Олег Целков" />
+      <h2>Современное искусство Олега Целкова</h2>
+      <button class="dropbtn" onclick="openModal(`Выставка современного искусства Олега Целкова — это яркое погружение
+      в мир экспрессии и абстракции, где цвет и форма становятся языком эмоций. Работы отличаются смелыми цветовыми решениями
+      и философским подтекстом.`)">
+        Подробнее
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Модальное окно -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p id="modal-text"></p>
+  </div>
+</div>
+    
     <!-- о нас -->
     <div class="about-container">
         <h2 class="section-title">О Винтаж</h2>
@@ -88,5 +162,30 @@
             </div>
         </section>
     </div>
+    <footer style="background-color: #000; color: #fff; padding: 40px 0; text-align: center; font-family: Arial, sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- Логотип -->
+    <div style="font-size: 24px; font-weight: bold;">
+      Винтаж
+    </div>
+
+    <!-- Навигация -->
+    <nav>
+      <a href="#" style="color: #fff; margin: 0 15px; text-decoration: none;">Главная</a>
+      <a href="#" style="color: #fff; margin: 0 15px; text-decoration: none;">Каталог</a>
+      <a href="#" style="color: #fff; margin: 0 15px; text-decoration: none;">Художники</a>
+      <a href="#" style="color: #fff; margin: 0 15px; text-decoration: none;">О галерее</a>
+      <a href="#" style="color: #fff; margin: 0 15px; text-decoration: none;">Контакты</a>
+    </nav>
+
+    <!-- Копирайт -->
+    <div style="font-size: 14px; margin-top: 10px; flex-basis: 100%;">
+      © 2025 Винтаж. Все права защищены.
+    </div>
+  </div>
+   <script src="script.js"></script>
+</footer>
+
 </body>
 </html>

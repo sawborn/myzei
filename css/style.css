@@ -237,3 +237,122 @@
         }
         
      
+
+
+
+
+    .exhibitions {
+    background: #ffffff;
+    color: #000000;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .exhibitions .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .exhibitions-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .exhibition-card {
+    background: #111;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  .exhibition-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .exhibition-card h2 {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  /* Dropdown */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropbtn {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .dropbtn:hover {
+    background:#c19a6b;
+    color: #ffffff;
+  }
+
+  .dropdown-content {
+    display: none;
+    background: #222;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    animation: fadeIn 0.4s ease;
+  }
+
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+  /* Модальное окно */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s ease;
+  }
+
+  .modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    color: #000000;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    animation: slideIn 0.3s ease;
+  }
+
+  .close {
+    color: #c19a6b;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
